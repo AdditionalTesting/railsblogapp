@@ -5,3 +5,7 @@
 <p>Description: <% @articles.description %> </p>
 
 <p>Date Posted: <% @articles.created_at %> </p>
+
+
+<%= link_to 'Edit this article', edit_article_path(@article) %> |
+<%= link_to 'Back to listing', articles_path %>
