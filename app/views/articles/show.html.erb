@@ -1,10 +1,10 @@
 <h1>The current article</h1>
 
-<p>Title: <% @article.title %> </p>
+<p>Title: <%= @article.title %> </p>
 
-<p>Description: <% @articles.description %> </p>
+<p>Description: <%= @article.description %> </p>
 
-<p>Date Posted: <% @articles.created_at %> </p>
+<p>Date Posted: <%= @article.created_at %> </p>
 
 
 <%= link_to 'Edit this article', edit_article_path(@article) %> |
