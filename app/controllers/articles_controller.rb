@@ -19,7 +19,7 @@ end
 def update
 
   if @article.update(article_params)
-    flash[:notice] = "Article was updated successfully!"
+    flash[:success] = "Article was updated successfully!"
     redirect_to article_path(@article)
   else
     render 'edit'
@@ -30,7 +30,7 @@ end
       @article = Article.new(article_params)
 
       if @article.save
-        flash[:notice] = "Your article was successfully posted!"
+        flash[:success] = "Your article was successfully posted!"
         redirect_to article_path(@article)
 
       else
@@ -39,14 +39,14 @@ end
     end
 
     def show
-    
+
 
     end
 
     def destroy
-    
+
           @article.destroy
-      flash[:notice] = 'Article was deleted!'
+      flash[:success] = 'Article was deleted!'
       redirect_to articles_path
 
     end
