@@ -1,4 +1,4 @@
-$navbar-default-bg: #2C2C2D;
+$navbar-default-bg: #0A76B7;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -43,6 +43,10 @@ $navbar-default-bg: #2C2C2D;
 .article-meta-details {
   border-top: 1px solid #eaeaea;
   margin-top: 15px
+}
+
+ul.nav.navbar-nav > li > a {
+  color: #e2d3d3
 }
 
 footer {
