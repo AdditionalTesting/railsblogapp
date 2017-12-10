@@ -30,7 +30,7 @@ class ArticlesController < ApplicationController
 
     def create
         @article = Article.new(article_params)
-
+        @article_user = current_user
         if @article.save
           flash[:success] = "Your article was successfully posted!"
           redirect_to article_path(@article)
